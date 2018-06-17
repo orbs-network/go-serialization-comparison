@@ -61,15 +61,17 @@ message MethodCallArgument {
 
 #### Non-trivial tasks
 
-* Verify `Transaction.signature` over the raw serialized data
-* Hash `TransactionSender` (eg. place it as a key in state)
-* Avoid decoding `TransactionPayload` since most services don't need its internals and it can be expensive
+1. Verify `Transaction.signature` over the raw serialized data
+2. Hash `TransactionSender` (eg. place it as a key in state)
+3. Avoid decoding `TransactionPayload` since most services don't need its internals and it can be expensive
 
 ## Encodings
 
 #### Google Protobuf
 
 > https://github.com/golang/protobuf
+
+Details [here](protobuf/README.md).
 
 #### Amino (Protobuf for blockchain)
 
@@ -82,3 +84,31 @@ message MethodCallArgument {
 #### Cap'n Proto
 
 > https://github.com/capnproto/go-capnproto2
+
+## Prerequisites
+
+* Make sure [Go](https://golang.org/doc/install) is installed (version 1.10 or later).
+  
+  > Verify with `go version`
+
+* Make sure [Go workspace bin](https://stackoverflow.com/questions/42965673/cant-run-go-bin-in-terminal) is in your path.
+  
+  > Install with ``export PATH=$PATH:`go env GOPATH`/bin``
+  
+  > Verify with `echo $PATH`
+
+* Make sure Git is installed (version 2 or later).
+  
+  > Verify with `git --version`
+
+## Build
+
+* Clone the repo to your Go workspace:
+```
+cd `go env GOPATH`
+go get github.com/orbs-network/go-serialization-comparison
+cd src/github.com/orbs-network/go-serialization-comparison
+git checkout master
+```
+
+* Follow the instructions inside each encoding folder.

@@ -1,0 +1,54 @@
+syntax = "proto3";
+package nested;
+option go_package = "github.com/orbs-network/go-serialization-comparison/protobuf/nested";
+
+message Transaction {
+bytes data_bytes = 1;
+bytes signature = 2; // 16B, signature over the hash of the header and payload together (do md5 for now)
+}
+
+message TransactionData {
+TransactionHeader header = 1;
+bytes payload_bytes = 2;
+}
+
+message TransactionHeader {
+uint32 protocol_version = 1;
+uint64 virtual_chain = 2;
+bytes sender_bytes = 3;
+int64 time_stamp = 4;
+}
+
+message TransactionSender {
+AddressScheme address_scheme = 1;
+NetworkType network_type = 2;
+bytes public_key = 3; // 32B
+}
+
+enum AddressScheme {
+RESERVED_SCHEME = 0;
+SCHEME01 = 1;
+FUTURE_SCHEME = 255;
+}
+
+enum NetworkType {
+RESERVED_NETWORK = 0;
+MAIN_NET = 77;
+TEST_NET = 84;
+FUTURE_NETWORK = 255;
+}
+
+message TransactionPayload {
+string contract_name = 1;
+string method_name = 2;
+repeated MethodCallArgument input_argument = 3;
+}
+
+message MethodCallArgument {
+oneof type {
+uint32 uint32 = 1;
+uint64 uint64 = 2;
+string string = 3;
+bytes bytes = 4;
+}
+}
