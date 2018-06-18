@@ -32,6 +32,6 @@ flatc -g **/*.fbs
 * To run (this will take you to project root):
 ```
 cd `go env GOPATH`
-cd src/github.com/orbs-network/go-serialization-comparison/protobuf
+cd src/github.com/orbs-network/go-serialization-comparison/flatbuffers
 go test
 ```
