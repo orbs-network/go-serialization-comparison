@@ -34,7 +34,9 @@ func TestNested(t *testing.T) {
 	fmt.Println(" TestNested")
 	fmt.Println("----------------------------------")
 
-	var err error;
+	// source transaction
+
+	var err error = nil;
 
 	decoded := &nested.Transaction{
 		DataBytes: quickMarshal(&err, &nested.TransactionData{

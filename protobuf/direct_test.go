@@ -27,6 +27,8 @@ func TestDirect(t *testing.T) {
 	fmt.Println(" TestDirect")
 	fmt.Println("----------------------------------")
 
+	// source transaction
+
 	decoded := &direct.Transaction{
 		Data: &direct.TransactionData{
 			Header: &direct.TransactionHeader{
