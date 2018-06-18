@@ -34,7 +34,7 @@ func TestNested(t *testing.T) {
 	fmt.Println(" TestNested")
 	fmt.Println("----------------------------------")
 
-	// source transaction
+	// create the source transaction
 
 	var err error = nil;
 

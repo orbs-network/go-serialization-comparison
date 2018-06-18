@@ -65,7 +65,7 @@ message MethodCallArgument {
 2. Hash `TransactionSender` (eg. place it as a key in state)
 3. Avoid decoding `TransactionPayload` since most services don't need its internals and it can be expensive
 
-## Encodings
+## Compared Encodings
 
 #### Google Protobuf
 
@@ -80,6 +80,8 @@ Details [here](protobuf/README.md).
 #### Google Flatbuffers
 
 > https://github.com/google/flatbuffers
+
+Details [here](flatbuffers/README.md).
 
 #### Cap'n Proto
 

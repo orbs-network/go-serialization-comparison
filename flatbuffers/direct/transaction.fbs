@@ -1,0 +1,12 @@
+namespace direct;
+
+table Transaction {
+  data: TransactionData;
+  signature: [ubyte];
+}
+
+table TransactionData {
+  name: string;
+}
+
+root_type Transaction;

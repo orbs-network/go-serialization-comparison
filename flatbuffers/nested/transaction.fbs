@@ -1,0 +1,12 @@
+namespace nested;
+
+table TransactionData {
+  name: string;
+}
+
+table Transaction {
+  data: [ubyte];
+  signature: [ubyte];
+}
+
+root_type Transaction;

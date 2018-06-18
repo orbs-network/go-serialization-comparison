@@ -27,7 +27,7 @@ func TestDirect(t *testing.T) {
 	fmt.Println(" TestDirect")
 	fmt.Println("----------------------------------")
 
-	// source transaction
+	// create the source transaction
 
 	decoded := &direct.Transaction{
 		Data: &direct.TransactionData{
@@ -103,6 +103,6 @@ func TestDirect(t *testing.T) {
 
 	fmt.Println("3. Avoid decoding TransactionPayload:")
 	fmt.Println()
-	fmt.Println("NOT SUPPORTED")
+	fmt.Println("NOT SUPPORTED (decoded automatically)")
 	fmt.Println()
 }
