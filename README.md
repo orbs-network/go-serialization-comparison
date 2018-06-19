@@ -87,6 +87,8 @@ Details [here](flatbuffers/README.md).
 
 > https://github.com/capnproto/go-capnproto2
 
+Details [here](capnproto/README.md).
+
 ## Prerequisites
 
 * Make sure [Go](https://golang.org/doc/install) is installed (version 1.10 or later).
