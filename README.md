@@ -71,23 +71,25 @@ message MethodCallArgument {
 
 > https://github.com/golang/protobuf
 
-Details [here](protobuf/README.md).
+Full details [here](protobuf/README.md).
 
-#### Amino (Protobuf for blockchain)
-
-> https://github.com/tendermint/go-amino
-
-#### Google Flatbuffers
+#### Google FlatBuffers
 
 > https://github.com/google/flatbuffers
 
-Details [here](flatbuffers/README.md).
+Full details [here](flatbuffers/README.md).
 
 #### Cap'n Proto
 
 > https://github.com/capnproto/go-capnproto2
 
-Details [here](capnproto/README.md).
+Full details [here](capnproto/README.md).
+
+#### MemBuffers
+
+> https://github.com/orbs-network/membuffers
+
+Full details [here](membuffers/README.md).
 
 ## Prerequisites
 

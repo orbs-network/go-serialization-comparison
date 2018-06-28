@@ -1,16 +1,16 @@
-# Google Flatbuffers
+# Google FlatBuffers
 
 https://github.com/google/flatbuffers
 
 ## Prerequisites
 
-* Make sure [Flatbuffers](http://brewformulas.org/Flatbuffers) is installed (version 1.9 or later).
+* Make sure [FlatBuffers](http://brewformulas.org/Flatbuffers) is installed (version 1.9 or later).
 
   > Install with `brew install flatbuffers`
   
   > Verify with `flatc --version`
   
-* Make sure [Flatbuffers](https://github.com/google/flatbuffers) Go runtime library is installed.
+* Make sure [FlatBuffers](https://github.com/google/flatbuffers) Go runtime library is installed.
  
   > Install with `go get github.com/google/flatbuffers/go`
 
